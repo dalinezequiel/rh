@@ -1,0 +1,25 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Nunito+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.dashboard {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+}
+.dashboard section:first-child div {
+  width: 460px;
+  height: 260px;
+  background-color: #ffffff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}
+.dashboard section:last-child div {
+  width: 460px;
+  height: 260px;
+  background-color: #ffffff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}

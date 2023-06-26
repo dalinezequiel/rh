@@ -1,0 +1,31 @@
+﻿@import './function/_function';
+
+.dashboard {
+    @include flex-align(initial,space-between,initial);
+
+    section {
+        &:first-child {
+            div {
+                width: 460px;
+                height: 260px;
+                background-color: #ffffff;
+                padding: 18px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                border: 1px solid #eeeeee;
+            }
+        }
+
+        &:last-child {
+            div {
+                width: 460px;
+                height: 260px;
+                background-color: #ffffff;
+                padding: 18px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                border: 1px solid #eeeeee;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tinLayout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <label>
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </label>
+                </a>
+            </div>
+            <div>
+                <div>
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Pesquise ou digite um comando" />
+                </div>
+                <div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div>
+                    <label>
+                        <img src="~/img/profile/user-32.png" />
+                    </label>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="sec">
+            <div>
+                <i class="ri-menu-line"></i>
+                <h3>Início</h3>
+            </div>
+            <div>
+                <h3>Boa noite, João Paulo!</h3>
+            </div>
+        </section>
+        <section class="sec">
+            <nav>
+                <ul>
+                    <li>
+                        <a>
+                            <i class="ri-dashboard-line"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="ri-menu-add-line"></i>
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="ri-barcode-box-line"></i>
+                            Estoque
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Courses" asp-action="Index">
+                            <i class="ri-shopping-bag-line"></i>
+                            Vendas
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="ri-shopping-cart-line"></i>
+                            Compras
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-money-dollar-circle-line"></i>
+                            Finânceiro
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-briefcase-line"></i>
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-account-circle-line"></i>
+                            Recursos humanos
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-file-chart-line"></i>
+                            Relatórios
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-question-line"></i>
+                            Suporte
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-tools-line"></i>
+                            Utilitários
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index">
+                            <i class="ri-settings-4-line"></i>
+                            Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                @RenderBody()
+            </div>
+        </section>
+    </main>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" asp-append-version="true"></script>
+    <script src="~/js/tinLayout.js" asp-append-version="true"></script>
+</body>
+</html>

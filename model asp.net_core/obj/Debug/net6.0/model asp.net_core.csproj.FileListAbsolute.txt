@@ -1,0 +1,29 @@
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\appsettings.Development.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\appsettings.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.staticwebassets.runtime.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.exe
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.deps.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.runtimeconfig.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.pdb
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.AssemblyReference.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfoInputs.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfo.cs
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CoreCompileInputs.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.MvcApplicationPartsAssemblyInfo.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cs
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.model asp.net_core.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.build.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.build.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.development.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\scopedcss\bundle\model asp.net_core.styles.css
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\refint\model asp.net_core.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.pdb
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.genruntimeconfig.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\ref\model asp.net_core.dll

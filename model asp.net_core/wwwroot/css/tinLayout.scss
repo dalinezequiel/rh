@@ -1,0 +1,118 @@
+﻿@import './palette/_palette';
+@import './function/_function';
+
+* {
+    @include initial();
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: $bg-primary;
+
+    main .sec {
+        padding-inline: 100px;
+
+        &:first-child {
+            padding-block: 18px;
+            @include flex-align(initial,space-between,center);
+
+            div:first-child {
+                @include flex-align(initial,initial,center);
+
+                i {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        &:last-child {
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+    }
+}
+
+header > section {
+    background-color: #ffffff;
+    padding-inline: 100px;
+    padding-block: 4px;
+    @include flex-align(initial,space-between,center);
+}
+
+header .logo {
+    label {
+        @include flex-align(initial,initial,center);
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+header > section div:last-child {
+    @include flex-align(initial,initial,center);
+
+    i:last-child {
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    div:first-child {
+        width: 240px;
+        border: 1px solid #f5f5f5;
+        border-radius: 4px;
+        padding-inline: 6px;
+        margin-right: 18px;
+        background-color: #f5f5f5;
+        @include flex-align(initial,initial,center);
+
+        input {
+            outline: none;
+            border: none;
+            width: 100%;
+            padding: 6px;
+            background-color: #f5f5f5;
+        }
+    }
+
+    div:last-child {
+        margin-left: 18px;
+
+        label {
+            @include flex-align(initial,initial,center);
+        }
+    }
+}
+
+main section:last-child > nav ul {
+    margin-right: 16px;
+
+    li:first-child a {
+        background-color: #eeeeee;
+    }
+
+    li {
+        display: flex;
+
+        a {
+            font-weight: 400;
+            padding-block: 12px;
+            padding-inline: 14px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 6px;
+            @include flex-align(initial,initial,center);
+
+            &:hover {
+                background-color: #eeeeee;
+            }
+
+            i:first-child {
+                padding-right: 10px;
+            }
+        }
+    }
+}

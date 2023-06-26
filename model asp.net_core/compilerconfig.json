@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/layout.css",
+    "inputFile": "wwwroot/css/layout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/dashboard.css",
+    "inputFile": "wwwroot/css/dashboard.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/adminLayout.css",
+    "inputFile": "wwwroot/css/adminLayout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/tinLayout.css",
+    "inputFile": "wwwroot/css/tinLayout.scss"
+  }
+]
