@@ -3,5 +3,118 @@
 *@
 @{
     ViewData["Title"] = "Index";
+    ViewData["Menu"]="Employee";
+    Layout = "~/Views/Shared/_TinLayout.cshtml";
 }
-<h1>Employee Index</h1>
+<div class="employee">
+    <section class="search">
+        <div class="add-btn">
+            <a asp-area="" asp-controller="Employee" asp-action="Create">
+                <i class="ri-add-line"></i>
+                Adicionar</a>
+        </div>
+        <div class="sea">
+            <div>
+                <select>
+                    <option>Selecione</option>
+                    <option>Todos</option>
+                    <option>Mais recentes</option>
+                    <optgroup label="Província">
+                        <option>Maputo</option>
+                        <option>Gaza</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="select">
+                <select>
+                    <option>Selecione</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+            </div>
+            <div class="date">
+                <div>
+                    <input type="date" />
+                </div>
+                <label>á</label>
+                <div>
+                    <input type="date" />
+                </div>
+            </div>
+        </div>
+        <div class="search-btn">
+            <input type="text" placeholder="Search .." />
+            <a><i class="ri-search-line"></i></a>
+        </div>
+    </section>
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>Ação</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td class="action">
+                        <div class="edit">
+                            <a>
+                                <i class="ri-pencil-line"></i>
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <a>
+                                <i class="ri-eye-line"></i>
+                            </a>
+                        </div>
+                        <div class="delete">
+                            <a>
+                                <i class="ri-delete-bin-line"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td>ma</td>
+                    <td class="action">
+                        <div class="edit">
+                            <a>
+                                <i class="ri-pencil-line"></i>
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <a>
+                                <i class="ri-eye-line"></i>
+                            </a>
+                        </div>
+                        <div class="delete">
+                            <a>
+                                <i class="ri-delete-bin-line"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

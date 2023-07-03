@@ -16,6 +16,10 @@ namespace model_asp.net_core.Controllers.Admin
         {
             return View("Views/Admin/Employee/Index.cshtml");
         }
+        public IActionResult Create()
+        {
+            return View("Views/Admin/Employee/Create.cshtml");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

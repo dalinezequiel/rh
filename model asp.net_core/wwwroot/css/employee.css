@@ -1,0 +1,149 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Nunito+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.employee .search {
+  background-color: #ffffff;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+}
+.employee .search .add-btn {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employee .search .add-btn a {
+  background-color: #673ab7;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employee .search .add-btn a i {
+  color: #ffffff;
+  font-size: 16px;
+}
+.employee .search .sea {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+}
+.employee .search .sea input, .employee .search .sea select {
+  padding: 4px 6px;
+  font-size: 14px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  outline: none;
+}
+.employee .search .sea .select {
+  margin-left: 10px;
+}
+.employee .search .sea .date {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employee .search .sea .date label {
+  padding-inline: 4px;
+}
+.employee .search .search-btn {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employee .search .search-btn input {
+  padding: 5px 6px;
+  font-size: 14px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 200px;
+}
+.employee .search .search-btn a {
+  background-color: #673ab7;
+  padding: 7px 8px;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employee .search .search-btn a i {
+  color: #ffffff;
+  font-size: 16px;
+}
+.employee .table {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  height: 70vh;
+}
+.employee .table table {
+  width: 100%;
+}
+.employee .table table td {
+  color: #616161;
+  padding-block: 6px;
+}
+.employee .table table thead {
+  box-shadow: 0 0 2px #f5f5f5;
+  font-size: 14px;
+  font-weight: 700;
+}
+.employee .table table thead td:last-child {
+  text-align: center;
+  width: 8%;
+}
+.employee .table table tbody {
+  font-size: 14px;
+}
+.employee .table table tbody .action {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.employee .table table tbody .action i {
+  padding: 4px 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.employee .table table tbody .action i:hover {
+  text-decoration: underline;
+}
+.employee .table table tbody .action .edit i {
+  color: #1009F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.employee .table table tbody .action .delete i {
+  color: #F02909;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.employee .table table tbody .action .detail i {
+  color: #E3B313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

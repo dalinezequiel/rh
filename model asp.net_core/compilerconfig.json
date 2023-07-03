@@ -14,5 +14,9 @@
   {
     "outputFile": "wwwroot/css/tinLayout.css",
     "inputFile": "wwwroot/css/tinLayout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/employee.css",
+    "inputFile": "wwwroot/css/employee.scss"
   }
 ]

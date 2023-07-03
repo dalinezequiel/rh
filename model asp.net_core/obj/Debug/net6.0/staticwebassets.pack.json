@@ -25,6 +25,18 @@
       "PackagePath": "staticwebassets\\css\\dashboard.scss"
     },
     {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.css",
+      "PackagePath": "staticwebassets\\css\\employee.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.min.css",
+      "PackagePath": "staticwebassets\\css\\employee.min.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.scss",
+      "PackagePath": "staticwebassets\\css\\employee.scss"
+    },
+    {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\function\\_function.scss",
       "PackagePath": "staticwebassets\\css\\function\\_function.scss"
     },
@@ -73,8 +85,24 @@
       "PackagePath": "staticwebassets\\img\\profile\\user-32.png"
     },
     {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\svg\\data.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\data.svg"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\svg\\happy.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\happy.svg"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\svg\\style.svg",
+      "PackagePath": "staticwebassets\\img\\svg\\style.svg"
+    },
+    {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\tinLayout.js",
+      "PackagePath": "staticwebassets\\js\\tinLayout.js"
     },
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\lib\\bootstrap\\LICENSE",

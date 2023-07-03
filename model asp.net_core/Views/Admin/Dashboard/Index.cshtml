@@ -3,23 +3,88 @@
 *@
 @{
     ViewData["Title"] = "Index";
+    ViewData["Menu"] = "Início";
     Layout = "~/Views/Shared/_TinLayout.cshtml";
 }
 
 <div class="dashboard">
     <section>
-        <div>
-            <h5>Estoque</h5>
-            <canvas></canvas>
-        </div>
-        <div>
+        <div class="finance">
             <h5>Finânceiro</h5>
             <canvas></canvas>
+        </div>
+        <div class="receipt">
+            <h5>Contas a receber - Hoje</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Vencimento</td>
+                        <td>Cliente</td>
+                        <td>Valor</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/01/2000</td>
+                        <td>Primeiro User</td>
+                        <td>0.00 MZN</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>= 0.00 MZN</p>
+        </div>
+        <div class="payment">
+            <h5>Contas a pagar - Hoje</h5>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Vencimento</td>
+                            <td>Cliente</td>
+                            <td>Valor</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2000</td>
+                            <td>Primeiro User</td>
+                            <td>0.00 MZN</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>= 0.00 MZN</p>
+            </div>
         </div>
     </section>
     <section>
-        <div>
-            <h5>Finânceiro</h5>
+        <div class="access">
+            <h5>Acesso rápido</h5>
+            <div>
+                <a>
+                    <i class="ri-shopping-cart-line"></i>
+                    <!--Faturamento-->
+                </a>
+                <a>
+                    <i class="ri-file-add-line"></i>
+                    <!--Produtos-->
+                </a>
+                <a asp-area="" asp-controller="Employee" asp-action="Index">
+                    <i class="ri-user-add-line"></i>
+                    <!--Clientes-->
+                </a>
+                <a>
+                    <i class="ri-file-add-line"></i>
+                    <!--Orçamento-->
+                </a>
+                <a>
+                    <!--<i class="ri-file-add-line"></i>-->
+                    <i class="ri-briefcase-line"></i>
+                    <!--Serviços-->
+                </a>
+            </div>
+        </div>
+        <div class="stock">
+            <h5>Estoque</h5>
             <canvas></canvas>
         </div>
     </section>
