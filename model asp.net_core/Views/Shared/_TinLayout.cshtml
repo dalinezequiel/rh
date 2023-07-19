@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/tinLayout.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/employee.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout/tinLayout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dashboard/dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/employee/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/employee/create.css" asp-append-version="true" />
+
+    <!--<link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -151,5 +154,6 @@
     @await RenderSectionAsync("Scripts", required: false)
     <script src="https://cdn.jsdelivr.net/npm/chart.js" asp-append-version="true"></script>
     <script src="~/js/tinLayout.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

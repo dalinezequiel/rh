@@ -1,11 +1,30 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@using model_asp.net_core.Models;
 @{
     ViewData["Title"] = "Index";
     ViewData["Menu"]="Employee";
     Layout = "~/Views/Shared/_TinLayout.cshtml";
 }
+
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}
+
 <div class="employee">
     <section class="search">
         <div class="add-btn">
@@ -51,69 +70,49 @@
         <table>
             <thead>
                 <tr>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Surname</td>
+                    <td>Gender</td>
+                    <td>Document</td>
+                    <td>Doc. Number</td>
+                    <td>Create At</td>
                     <td>Ação</td>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td class="action">
-                        <div class="edit">
-                            <a>
-                                <i class="ri-pencil-line"></i>
-                            </a>
-                        </div>
-                        <div class="detail">
-                            <a>
-                                <i class="ri-eye-line"></i>
-                            </a>
-                        </div>
-                        <div class="delete">
-                            <a>
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td>ma</td>
-                    <td class="action">
-                        <div class="edit">
-                            <a>
-                                <i class="ri-pencil-line"></i>
-                            </a>
-                        </div>
-                        <div class="detail">
-                            <a>
-                                <i class="ri-eye-line"></i>
-                            </a>
-                        </div>
-                        <div class="delete">
-                            <a>
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
+                @foreach(EmployeeModel em in ViewBag.listEmployee)
+                {
+                    if(em != null)
+                    {
+                        <tr>
+                            <td>@em.Id</td>
+                            <td>@em.Name</td>
+                            <td>@em.Surname</td>
+                            <td>@em.Gender</td>
+                            <td>@em.Document</td>
+                            <td>@em.DocNumber</td>
+                            <td>@em.CreateAt.ToShortDateString()</td>
+                            <td class="action">
+                                <div class="edit">
+                                    <a asp-controller="Employee" asp-action="Edit" asp-route-id="@em.Id">
+                                        <i class="ri-pencil-line"></i>
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <a asp-controller="Employee" asp-action="Details" asp-route-id="@em.Id">
+                                        <i class="ri-eye-line"></i>
+                                    </a>
+                                </div>
+                                <div class="delete">
+                                    <a asp-controller="Employee" asp-action="Delete" asp-route-id="@em.Id">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
             </tbody>
         </table>
     </section>

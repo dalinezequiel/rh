@@ -1,0 +1,108 @@
+﻿@import '../function/_function';
+
+.create-employee {
+    background-color: #FEFEFE;
+    padding: 10px;
+    border-radius: 6px;
+
+    div {
+        padding: 4px;
+        @include flex-align(column,initial,initial);
+
+        input, select {
+            padding: 6px 6px;
+            font-size: 14px;
+            border: 1px solid #f5f5f5;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        label {
+            color: #424242;
+            font-size: 14px;
+        }
+    }
+
+    .identity-box {
+        display: grid;
+        grid-template-columns: 33% auto 33%;
+        padding: 6px 6px 20px 6px;
+
+
+        div {
+            &:nth-child(1) {
+                width: 50%;
+            }
+
+            &:nth-child(6) {
+                width: 50%;
+            }
+
+            &:nth-child(7) {
+                width: 50%;
+            }
+        }
+    }
+
+    .address-box {
+        display: grid;
+        grid-template-columns: 33% auto 33%;
+        padding: 6px 6px 20px 6px;
+
+        div {
+            width: 100%;
+
+            &:nth-child(3) {
+                width: 50%;
+            }
+        }
+    }
+
+    .contact-box {
+        display: grid;
+        grid-template-columns: 33% auto 33%;
+        padding: 6px 6px 20px 6px;
+    }
+
+    .btn {
+        padding: 2px 6px;
+        @include flex-align(row,end,initial);
+
+        div {
+            a,button {
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #ffffff;
+                font-size: 14px;
+                @include flex-align(row,initial,center);
+
+                i {
+                    padding-right: 4px;
+                    color: #ffffff;
+
+                    &:first-child {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &:first-child a {
+                background-color: #9C1818;
+
+                &:hover {
+                    background-image: linear-gradient(45deg,#9C1818, #B01A1A);
+                }
+            }
+
+            &:last-child button {
+                border:none;
+                background-color: #3e32a8;
+
+                &:hover {
+                    background-image: linear-gradient(45deg,#261AB0, #672EC0);
+                }
+            }
+        }
+    }
+}

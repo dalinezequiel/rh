@@ -18,5 +18,13 @@
   {
     "outputFile": "wwwroot/css/employee.css",
     "inputFile": "wwwroot/css/employee.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/employee/create.css",
+    "inputFile": "wwwroot/css/employee/create.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/app.css",
+    "inputFile": "wwwroot/css/app.scss"
   }
 ]

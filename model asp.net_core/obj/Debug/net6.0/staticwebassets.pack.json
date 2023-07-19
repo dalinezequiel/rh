@@ -1,56 +1,80 @@
 {
   "Files": [
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\adminLayout.css",
-      "PackagePath": "staticwebassets\\css\\adminLayout.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\adminLayout.min.css",
-      "PackagePath": "staticwebassets\\css\\adminLayout.min.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\css\\app.min.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\adminLayout.scss",
-      "PackagePath": "staticwebassets\\css\\adminLayout.scss"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\app.scss",
+      "PackagePath": "staticwebassets\\css\\app.scss"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard.css",
-      "PackagePath": "staticwebassets\\css\\dashboard.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard\\dashboard.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard.min.css",
-      "PackagePath": "staticwebassets\\css\\dashboard.min.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard\\dashboard.min.css",
+      "PackagePath": "staticwebassets\\css\\dashboard\\dashboard.min.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard.scss",
-      "PackagePath": "staticwebassets\\css\\dashboard.scss"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\dashboard\\dashboard.scss",
+      "PackagePath": "staticwebassets\\css\\dashboard\\dashboard.scss"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.css",
-      "PackagePath": "staticwebassets\\css\\employee.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\create.css",
+      "PackagePath": "staticwebassets\\css\\employee\\create.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.min.css",
-      "PackagePath": "staticwebassets\\css\\employee.min.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\create.min.css",
+      "PackagePath": "staticwebassets\\css\\employee\\create.min.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee.scss",
-      "PackagePath": "staticwebassets\\css\\employee.scss"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\create.scss",
+      "PackagePath": "staticwebassets\\css\\employee\\create.scss"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\index.css",
+      "PackagePath": "staticwebassets\\css\\employee\\index.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\index.min.css",
+      "PackagePath": "staticwebassets\\css\\employee\\index.min.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\index.scss",
+      "PackagePath": "staticwebassets\\css\\employee\\index.scss"
     },
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\function\\_function.scss",
       "PackagePath": "staticwebassets\\css\\function\\_function.scss"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout.css",
-      "PackagePath": "staticwebassets\\css\\layout.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout\\layout.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout.min.css",
-      "PackagePath": "staticwebassets\\css\\layout.min.css"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\layout.min.css",
+      "PackagePath": "staticwebassets\\css\\layout\\layout.min.css"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout.scss",
-      "PackagePath": "staticwebassets\\css\\layout.scss"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\layout.scss",
+      "PackagePath": "staticwebassets\\css\\layout\\layout.scss"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\tinLayout.css",
+      "PackagePath": "staticwebassets\\css\\layout\\tinLayout.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\tinLayout.min.css",
+      "PackagePath": "staticwebassets\\css\\layout\\tinLayout.min.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\layout\\tinLayout.scss",
+      "PackagePath": "staticwebassets\\css\\layout\\tinLayout.scss"
     },
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\palette\\_palette.scss",
@@ -59,18 +83,6 @@
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\tinLayout.css",
-      "PackagePath": "staticwebassets\\css\\tinLayout.css"
-    },
-    {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\tinLayout.min.css",
-      "PackagePath": "staticwebassets\\css\\tinLayout.min.css"
-    },
-    {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\tinLayout.scss",
-      "PackagePath": "staticwebassets\\css\\tinLayout.scss"
     },
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\favicon.ico",

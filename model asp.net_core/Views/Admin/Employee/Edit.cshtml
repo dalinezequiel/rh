@@ -1,0 +1,131 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using model_asp.net_core.Models;
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["Menu"] = "Employee";
+    Layout = "~/Views/Shared/_TinLayout.cshtml";
+    EmployeeModel em = ViewBag.Employee;
+}
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}
+
+<form method="post" asp-controller="Employee" asp-action="Edit">
+    <section class="create-employee">
+    <section class="identity">
+        <h4>Identificação</h4>
+        <div class="identity-box">
+            <div>
+                <label>Código</label>
+                <input type="text" name="id" value="@em.Id" readonly/>
+            </div>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="name" value="@em.Name"/>
+            </div>
+            <div>
+                <label>Apelido</label>
+                <input type="text" name="surname" value="@em.Surname"/>
+            </div>
+            <div>
+                <label>Gênero</label>
+                <select name="gender" asp-items="@em.Genders">
+                </select>
+            </div>
+            <div>
+                <label>Documento</label>
+                <select name="document" asp-items="@em.Documents">
+                </select>
+            </div>
+            <div>
+                <label>N° documento</label>
+                <input type="text" name="doc_number" value="@em.DocNumber"/>
+            </div>
+            <div>
+                <label>Nuit</label>
+                <input type="number" />
+            </div>
+        </div>
+    </section>
+    <section class="address">
+        <h4>Endereço</h4>
+        <div class="address-box">
+            <div>
+                <label>Provincia</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Maputo</option>
+                    <option>Gaza</option>
+                    <option>Inhambane</option>
+                    <option>Manica</option>
+                    <option>Sofala</option>
+                </select>
+            </div>
+            <div>
+                <label>Distrito</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Manhiça</option>
+                    <option>Boane</option>
+                    <option>Magude</option>
+                    <option>Xai xai</option>
+                    <option>Chibuto</option>
+                    <option>Massinga</option>
+                </select>
+            </div>
+            <div>
+                <label>Rua</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label>Avenida</label>
+                <input type="text" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <h4>Contacto</h4>
+        <div class="contact-box">
+            <div>
+                <label>Email</label>
+                <input type="email" />
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label>Celular</label>
+                <input type="text" />
+            </div>
+        </div>
+    </section>
+    <section class="btn">
+        <div>
+            <a asp-area="" asp-controller="Employee" asp-action="Index">
+                <i class="ri-arrow-left-circle-line"></i>
+                Voltar</a>
+        </div>
+        <div>
+            <button>
+                <i class="fa-solid fa-save"></i>
+                Update</button>
+        </div>
+    </section>
+</section>
+</form>

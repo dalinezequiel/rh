@@ -51,7 +51,7 @@ new Chart(graf[0], {
 });
 
 new Chart(graf[1], {
-    type: 'radar',
+    type: 'scatter',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
