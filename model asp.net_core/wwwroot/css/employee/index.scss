@@ -1,7 +1,7 @@
 ﻿@import '../function/_function';
 
 .employee {
-    box-shadow: 0 0 10px #f5f5f5;
+    //box-shadow: 0 0 10px #f5f5f5;
 
     .search {
         background-color: #FEFEFE;
@@ -132,9 +132,17 @@
                         @include flex-align(column,center,center);
                     }
 
-                    .delete i {
-                        color: #F02909;
-                        @include flex-align(column,center,center);
+                    .delete {
+                        background-color:yellow;
+                        button {
+                            border: none;
+                            background-color: #ffffff;
+
+                            i {
+                                color: #F02909;
+                                @include flex-align(column,center,center);
+                            }
+                        }
                     }
 
                     .detail i {

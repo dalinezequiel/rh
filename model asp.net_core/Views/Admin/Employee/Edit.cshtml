@@ -6,55 +6,38 @@
     ViewData["Title"] = "Edit";
     ViewData["Menu"] = "Employee";
     Layout = "~/Views/Shared/_TinLayout.cshtml";
-    EmployeeModel em = ViewBag.Employee;
-}
-@{
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    if (ViewData["error"] != null)
-    {
-        <script type="text/javascript">
-            Swal.fire({
-                title: 'Erro!',
-                icon: 'error',
-                html: '@ViewData["error"]',
-                focusConfirm: true,
-                confirmButtonText: 'OK, entendi!',
-                showLoaderOnConfirm: true,
-            });
-        </script>
-    }
 }
 
 <form method="post" asp-controller="Employee" asp-action="Edit">
-    <section class="create-employee">
+ <section class="create-employee">
     <section class="identity">
         <h4>Identificação</h4>
         <div class="identity-box">
             <div>
                 <label>Código</label>
-                <input type="text" name="id" value="@em.Id" readonly/>
+                    <input type="text" name="id" value="@ViewBag.E.Id" readOnly/>
             </div>
             <div>
                 <label>Nome</label>
-                <input type="text" name="name" value="@em.Name"/>
+                <input type="text" name="name" value="@ViewBag.E.Name"/>
             </div>
             <div>
                 <label>Apelido</label>
-                <input type="text" name="surname" value="@em.Surname"/>
+                <input type="text" name="surname" value="@ViewBag.E.Surname"/>
             </div>
             <div>
                 <label>Gênero</label>
-                <select name="gender" asp-items="@em.Genders">
+                <select name="gender" asp-items="@ViewBag.E.Genders">
                 </select>
             </div>
             <div>
                 <label>Documento</label>
-                <select name="document" asp-items="@em.Documents">
+                <select name="document" asp-items="@ViewBag.E.Documents">
                 </select>
             </div>
             <div>
                 <label>N° documento</label>
-                <input type="text" name="doc_number" value="@em.DocNumber"/>
+                <input type="text" name="doc_number" value="@ViewBag.E.DocNumber"/>
             </div>
             <div>
                 <label>Nuit</label>
@@ -129,3 +112,54 @@
     </section>
 </section>
 </form>
+
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        const updateForm = document.getElementsByTagName("form");
+        updateForm[0].addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Tem certeza?',
+                icon: 'question',
+                html: 'Você não será capaz de reverter isso!',
+                showCloseButton: false,
+                showCancelButton: true,
+                focusConfirm: true,
+                confirmButtonText: 'Sim, actualizar!',
+                cancelButtonText: 'Não, cancelar!',
+                showLoaderOnConfirm: true,
+                reverseButtons: true,
+                dangerMode: true
+
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    updateForm[0].submit();
+                } else {
+                    Swal.fire({
+                        title: 'Oops..!',
+                        icon: 'info',
+                        html: 'Não foi possível actualizar este funcionário!',
+                        focusConfirm: true,
+                        confirmButtonText: 'OK, entendi!',
+                        showLoaderOnConfirm: true,
+                    });
+                }
+            });
+        })
+    </script>
+
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}

@@ -1,3 +1,9 @@
 ﻿
-//@import './function/_function';
-//@import './dashboard/dashboard';
+//LAYOUT STYLES
+@import '../css/layout/tinLayout.scss';
+
+//EMPLOYEE STYLES
+@import './dashboard/dashboard.scss';
+@import './employee//index.scss';
+@import './employee/create.scss';
+@import './employee/detail.scss';

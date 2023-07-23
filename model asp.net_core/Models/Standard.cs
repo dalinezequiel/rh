@@ -25,5 +25,30 @@ namespace model_asp.net_core.Models
                 femenino.Selected = true;
             return new List<SelectListItem>() { masculino, femenino};
         }
+
+        /*
+         * public static List<SelectListItem> UpdateGender(String gender)
+        {
+            masculino = new SelectListItem();
+            masculino.Text = "Masculino";
+            masculino.Value = "Masculino";
+
+            femenino = new SelectListItem();
+            femenino.Text = "Femenino";
+            femenino.Value = "Femenino";
+
+            selecione = new SelectListItem();
+            selecione.Text = "Selecione";
+            selecione.Value = "Selecione";
+
+            if (gender.Equals("Masculino"))
+                masculino.Selected = true;
+            else if(gender.Equals("Femenino"))
+                femenino.Selected = true;
+            else
+                selecione.Selected = true;
+            return new List<SelectListItem>() { masculino, femenino, selecione};
+        }
+         */
     }
 }

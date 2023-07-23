@@ -1,4 +1,4 @@
-﻿@import './function/_function';
+﻿@import '../function/_function';
 
 .dashboard {
     @include flex-align(initial,space-between,initial);

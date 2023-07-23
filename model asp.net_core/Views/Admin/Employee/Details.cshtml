@@ -5,19 +5,18 @@
     ViewData["Title"] = "Details";
     ViewData["Menu"] = "Employee";
     Layout = "~/Views/Shared/_TinLayout.cshtml";
-    EmployeeModel em = ViewBag.Employee;
 }
 
 <div class="modal fade" id="employeeDetail">
-    <section>
+    <section class="employeeDetail">
         <h1>Details Employee</h1>
-        <div>
-            <p>Id: @em.Id</p>
-            <p>Name: @em.Name</p>
-            <p>Surname: @em.Surname</p>
-            <p>Gender: @em.Gender</p>
-            <p>Document: @em.Document</p>
-            <p>Doc. Number: @em.DocNumber</p>
-        </div>
+        <!--<div>
+            <p>Id: ViewBag.E.Id</p>
+            <p>Name: ViewBag.E.Name</p>
+            <p>Surname: ViewBag.E.Surname</p>
+            <p>Gender: ViewBag.E.Gender</p>
+            <p>Document: ViewBag.E.Document</p>
+            <p>Doc. Number: ViewBag.E.DocNumber</p>
+        </div>-->
     </section>
 </div>

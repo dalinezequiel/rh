@@ -25,7 +25,6 @@ namespace model_asp.net_core.Controllers.Admin
 
         [HttpGet]
         [Route("employee")]
-        //[Route("employee/index")]
         public IActionResult Index()
         {
             listEmployee = new List<EmployeeModel>();
@@ -85,8 +84,8 @@ namespace model_asp.net_core.Controllers.Admin
                 cmd.Parameters.AddWithValue("@id", collection["id"].Equals("") ? null : collection["id"].ToString());
                 cmd.Parameters.AddWithValue("@name", collection["name"].Equals("") ? null : collection["name"].ToString());
                 cmd.Parameters.AddWithValue("@surname", collection["surname"].Equals("") ? null : collection["surname"].ToString());
-                cmd.Parameters.AddWithValue("@gender", collection["gender"].Equals("") ? null : collection["gender"].ToString());
-                cmd.Parameters.AddWithValue("@document", collection["document"].Equals("") ? null : collection["document"].ToString());
+                cmd.Parameters.AddWithValue("@gender", collection["gender"].Equals("") || collection["gender"].Equals("Selecione") ? null : collection["gender"].ToString());
+                cmd.Parameters.AddWithValue("@document", collection["document"].Equals("") || collection["document"].Equals("Selecione") ? null : collection["document"].ToString());
                 cmd.Parameters.AddWithValue("@doc_number", collection["doc_number"].Equals("") ? null : collection["doc_number"].ToString());
                 cmd.Parameters.AddWithValue("@create_at", DateTime.Now);
                 cmd.ExecuteNonQuery();
@@ -130,7 +129,7 @@ namespace model_asp.net_core.Controllers.Admin
                 read.Close();
                 con.Close();
 
-                ViewBag.Employee = employeeModel;
+                ViewBag.E = employeeModel;
                 return View("Views/Admin/Employee/Edit.cshtml");
             }
             catch (Exception ex)
@@ -152,10 +151,11 @@ namespace model_asp.net_core.Controllers.Admin
                 cmd = new SqlCommand(sql_update, con);
                 con.Open();
 
-                cmd.Parameters.AddWithValue("@name", collection["name"].ToString());
-                cmd.Parameters.AddWithValue("@surname", collection["surname"].ToString());
-                cmd.Parameters.AddWithValue("@document", collection["document"].ToString());
-                cmd.Parameters.AddWithValue("@doc_number", collection["doc_number"].ToString());
+                cmd.Parameters.AddWithValue("@name", collection["name"].Equals("") ? null : collection["name"].ToString());
+                cmd.Parameters.AddWithValue("@surname", collection["surname"].Equals("") ? null : collection["surname"].ToString());
+                cmd.Parameters.AddWithValue("@gender", collection["gender"].Equals("") || collection["gender"].Equals("Selecione") ? null : collection["gender"].ToString());
+                cmd.Parameters.AddWithValue("@document", collection["document"].Equals("") || collection["document"].Equals("Selecione") ? null : collection["document"].ToString());
+                cmd.Parameters.AddWithValue("@doc_number", collection["doc_number"].Equals("") ? null : collection["doc_number"].ToString());
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.ExecuteNonQuery();
 
@@ -166,6 +166,7 @@ namespace model_asp.net_core.Controllers.Admin
             catch (Exception ex)
             {
                 ViewData["error"] = ex.Message;
+                ViewBag.E = new EmployeeModel();
                 return View("Views/Admin/Employee/Edit.cshtml");
             }
         }
@@ -196,13 +197,40 @@ namespace model_asp.net_core.Controllers.Admin
                 read.Close();
                 con.Close();
 
-                ViewBag.Employee = employeeModel;
+                ViewBag.E = employeeModel;
                 return View("Views/Admin/Employee/Details.cshtml");
             }
             catch (Exception ex)
             {
                 ViewData["error"] = ex.Message;
                 return View("Views/Admin/Employee/Details.cshtml");
+            }
+        }
+
+        [HttpGet]
+        [Route("employee/delete/{id?}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                string sql_delete = "DELETE FROM employees WHERE id=@id";
+                con = new SqlConnection(_configuration.GetConnectionString("solus"));
+                cmd = new SqlCommand(sql_delete, con);
+                con.Open();
+
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+                TempData["del"] = "Employee deleted successfully!";
+                return RedirectToAction("Index", "Employee");
+            }
+            catch(Exception ex)
+            {
+                this.Index();
+                ViewBag.listEmployee = listEmployee;
+                ViewData["error"] = ex.Message;
+                return View("Views/Admin/Employee/Index.cshtml");
             }
         }
 

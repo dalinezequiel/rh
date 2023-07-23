@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets\\css\\employee\\create.scss"
     },
     {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\detail.css",
+      "PackagePath": "staticwebassets\\css\\employee\\detail.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\detail.min.css",
+      "PackagePath": "staticwebassets\\css\\employee\\detail.min.css"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\detail.scss",
+      "PackagePath": "staticwebassets\\css\\employee\\detail.scss"
+    },
+    {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\css\\employee\\index.css",
       "PackagePath": "staticwebassets\\css\\employee\\index.css"
     },

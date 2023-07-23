@@ -8,23 +8,6 @@
     Layout = "~/Views/Shared/_TinLayout.cshtml";
 }
 
-@{
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    if (ViewData["error"] != null)
-    {
-        <script type="text/javascript">
-            Swal.fire({
-                title: 'Erro!',
-                icon: 'error',
-                html: '@ViewData["error"]',
-                focusConfirm: true,
-                confirmButtonText: 'OK, entendi!',
-                showLoaderOnConfirm: true,
-            });
-        </script>
-    }
-}
-
 <div class="employee">
     <section class="search">
         <div class="add-btn">
@@ -41,6 +24,12 @@
                     <optgroup label="Província">
                         <option>Maputo</option>
                         <option>Gaza</option>
+                        <option>Inhambane</option>
+                        <option>Manica</option>
+                    </optgroup>
+                    <optgroup label="Order By">
+                        <option>Asc</option>
+                        <option>Desc</option>
                     </optgroup>
                 </select>
             </div>
@@ -81,9 +70,9 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(EmployeeModel em in ViewBag.listEmployee)
+                @if (ViewBag.listEmployee != null)
                 {
-                    if(em != null)
+                    @foreach (EmployeeModel em in ViewBag.listEmployee)
                     {
                         <tr>
                             <td>@em.Id</td>
@@ -105,9 +94,9 @@
                                     </a>
                                 </div>
                                 <div class="delete">
-                                    <a asp-controller="Employee" asp-action="Delete" asp-route-id="@em.Id">
+                                    <button value="@em.Id">
                                         <i class="ri-delete-bin-line"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
@@ -117,3 +106,57 @@
         </table>
     </section>
 </div>
+
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        const deleteEmployee=document.querySelectorAll('.delete button');
+        for(var i=0;i<deleteEmployee.length;i++){
+            deleteEmployee[i].addEventListener('click', function(){
+            Swal.fire({
+                title: 'Tem certeza?',
+                icon: 'warning',
+                html: 'Você não será capaz de reverter isso!<!--</br><p style="color:#e53935;font-style:inherit;font-size:14px;">[' + this.value + '][' + this.name + ']</p>-->',
+                showCloseButton: false,
+                showCancelButton: true,
+                focusConfirm: false,
+                focusCancel: false,
+                confirmButtonText: 'Sim, excluir!',
+                confirmButtonColor: '#e53935',
+                cancelButtonText: 'Não, cancelar!',
+                showLoaderOnConfirm: true,
+                reverseButtons: true,
+
+            }).then((result) => {
+                if (result.isConfirmed) {
+                            window.location.href = 'employee/delete/'+ this.value +'';
+                } else {
+                    Swal.fire({
+                        title: 'Oops..!',
+                        icon: 'info',
+                        html: 'Não foi possível excluir este funcionário!',
+                        focusConfirm: true,
+                        confirmButtonText: 'OK, entendi!',
+                        showLoaderOnConfirm: true,
+                    });
+                }
+            });
+        });
+        }
+    </script>
+
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}
+
