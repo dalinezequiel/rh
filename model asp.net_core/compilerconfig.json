@@ -30,5 +30,17 @@
   {
     "outputFile": "wwwroot/css/employee/detail.css",
     "inputFile": "wwwroot/css/employee/detail.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/layout/appLayout.css",
+    "inputFile": "wwwroot/css/layout/appLayout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/layout/siteLayout.css",
+    "inputFile": "wwwroot/css/layout/siteLayout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/employee/index.css",
+    "inputFile": "wwwroot/css/employee/index.scss"
   }
 ]

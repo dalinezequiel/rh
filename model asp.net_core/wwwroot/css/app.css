@@ -549,5 +549,6 @@ html body main .sec:last-child nav ul li a i:first-child {
 }
 
 .employeeDetail {
-  background-color: yellow;
+  border: 1px solid #455a64;
+  box-shadow: -2px 2px 2px #455a64;
 }

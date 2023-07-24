@@ -1,0 +1,83 @@
+﻿@import '../palette/_palette';
+@import '../function/_function';
+
+* {
+    @include initial();
+}
+
+body {
+    background-color: $bg-primary;
+}
+
+header > nav ul {
+    @include flex-align(initial,initial,center);
+}
+
+header > nav {
+    @include flex-align(initial,space-between,center);
+    background-color: #ffffff;
+    padding: 8px 100px;
+}
+
+header > nav > ul > li:last-child > a:first-child {
+    background-color: $test;
+    border-radius: 6px;
+    color: #ffffff;
+
+    &:hover {
+        background-color: $test_hover;
+    }
+}
+
+header > nav > ul > li:first-child > a:first-child {
+    border-radius: 6px;
+    margin-right: 8px;
+    box-shadow: 0 0 2px #e0e0e0;
+
+    &:hover {
+        box-shadow: 0 2px 2px #e0e0e0;
+    }
+}
+
+header > nav > ul > li:first-child > a:first-child i {
+    margin-right: 4px;
+}
+
+header > nav > div {
+    @include flex-align( initial, space-between, center);
+    //width: 40%;
+}
+
+/**/header > nav > div > div {
+    @include flex-align( initial, initial, center);
+}
+
+header > nav .logo {
+    @include flex-align(initial,initial,center);
+    text-align:center;
+}
+
+header > nav .logo i {
+    font-size: 32px;
+    padding-right: 10px;
+    color: $test;
+}
+
+header > nav > h1 {
+    text-align: center;
+}
+
+header > nav a {
+    padding: 10px 16px;
+    @include flex-align(initial,initial,center);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header > nav > ul > a {
+    font-weight: 400;
+}
+
+footer {
+    padding: 8px 100px;
+}

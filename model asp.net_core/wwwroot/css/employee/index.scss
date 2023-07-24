@@ -1,11 +1,8 @@
 ﻿@import '../function/_function';
 
 .employee {
-    //box-shadow: 0 0 10px #f5f5f5;
-
     .search {
         background-color: #FEFEFE;
-        //padding: 8px 12px;
         padding: 8px 0;
         margin-bottom: 4px;
         border-radius: 4px;
@@ -87,7 +84,6 @@
     .table {
         background-color: #FEFEFE;
         border-radius: 4px;
-        //padding: 8px 12px;
         padding: 8px 0;
         height: 70vh;
         box-shadow: 0 0 10px #f5f5f5;
@@ -133,7 +129,8 @@
                     }
 
                     .delete {
-                        background-color:yellow;
+                        background-color: yellow;
+
                         button {
                             border: none;
                             background-color: #ffffff;

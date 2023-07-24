@@ -70,6 +70,7 @@ namespace model_asp.net_core.Controllers.Admin
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Route("employee/create")]
         public IActionResult Create(IFormCollection collection)
         {
@@ -140,6 +141,7 @@ namespace model_asp.net_core.Controllers.Admin
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Route("employee/edit/{id?}")]
         public IActionResult Edit(int id, IFormCollection collection)
         {

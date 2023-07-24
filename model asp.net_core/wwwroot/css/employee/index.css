@@ -1,7 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Nunito+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 .employee .search {
-  background-color: #ffffff;
-  padding: 8px 12px;
+  background-color: #FEFEFE;
+  padding: 8px 0;
   margin-bottom: 4px;
   border-radius: 4px;
   display: flex;
@@ -88,10 +88,11 @@
   font-size: 16px;
 }
 .employee .table {
-  background-color: #ffffff;
+  background-color: #FEFEFE;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 8px 0;
   height: 70vh;
+  box-shadow: 0 0 10px #f5f5f5;
 }
 .employee .table table {
   width: 100%;
@@ -133,7 +134,14 @@
   justify-content: center;
   align-items: center;
 }
-.employee .table table tbody .action .delete i {
+.employee .table table tbody .action .delete {
+  background-color: yellow;
+}
+.employee .table table tbody .action .delete button {
+  border: none;
+  background-color: #ffffff;
+}
+.employee .table table tbody .action .delete button i {
   color: #F02909;
   display: flex;
   flex-direction: column;

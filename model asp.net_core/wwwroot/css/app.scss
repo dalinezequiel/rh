@@ -1,9 +1,11 @@
 ﻿
-//LAYOUT STYLES
-@import '../css/layout/tinLayout.scss';
+//layouts style
+@import '../css/layout/appLayout.scss';
 
-//EMPLOYEE STYLES
+//dashboards style
 @import './dashboard/dashboard.scss';
-@import './employee//index.scss';
+
+//employee styles
+@import './employee/index.scss';
 @import './employee/create.scss';
 @import './employee/detail.scss';

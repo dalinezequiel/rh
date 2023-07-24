@@ -27,7 +27,6 @@ D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\De
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.pdb
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.genruntimeconfig.cache
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\ref\model asp.net_core.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\CurrieTechnologies.Razor.SweetAlert2.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CopyComplete
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Data.SqlClient.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
