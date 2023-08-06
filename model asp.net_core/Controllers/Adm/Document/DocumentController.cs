@@ -14,16 +14,14 @@ namespace model_asp.net_core.Controllers.Admin.Document
         protected SelectListItem item = null;
         protected List<SelectListItem> list, select = null;
 
-        public DocumentController(SqlConnection connection)
-        {
-            con = connection;
-        }
-        public List<SelectListItem> GetDocuments()
+        public List<SelectListItem> GetDocuments(SqlConnection connection)
         {
             list = new List<SelectListItem>();
             try
             {
                 string sql_select = "SELECT * FROM documents";
+                con = connection;
+                connection.Close();
                 cmd = new SqlCommand(sql_select, con);
                 con.Open();
 
@@ -32,25 +30,26 @@ namespace model_asp.net_core.Controllers.Admin.Document
                 {
                     documentModel = new DocumentModel();
                     documentModel.Id = int.Parse(read["id"].ToString());
-                    documentModel.Document = read["document"].ToString();
+                    documentModel.Name = read["document"].ToString();
                     item = new SelectListItem();
-                    item.Text = documentModel.Document;
-                    item.Value = documentModel.Document;
+                    item.Text = documentModel.Name;
+                    item.Value = documentModel.Name;
                     list.Add(item);
                 }
                 read.Close();
                 con.Close();
-                return list;
             }
             catch (Exception ex)
             {
                 return new List<SelectListItem>() { new SelectListItem(ex.Message, "error") };
             }
+            return list;
         }
 
-        public List<SelectListItem> UpdateDocument(String document)
+        public List<SelectListItem> UpdateDocument(SqlConnection connection, string document)
         {
-            list = GetDocuments();
+            con = connection;
+            list = GetDocuments(con);
             select = new List<SelectListItem>();
             for (int i=0;i<list.Count; i++)
             {

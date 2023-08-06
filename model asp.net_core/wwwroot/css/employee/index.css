@@ -1,4 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Nunito+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.employee {
+  padding-inline: 14px 0;
+}
 .employee .search {
   background-color: #FEFEFE;
   padding: 8px 0;
@@ -21,7 +24,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   flex-direction: initial;
   justify-content: initial;
@@ -29,7 +32,7 @@
 }
 .employee .search .add-btn a i {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .employee .search .sea {
   display: flex;
@@ -39,7 +42,7 @@
 }
 .employee .search .sea input, .employee .search .sea select {
   padding: 4px 6px;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #f5f5f5;
   border-radius: 4px;
   outline: none;
@@ -65,7 +68,7 @@
 }
 .employee .search .search-btn input {
   padding: 5px 6px;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #f5f5f5;
   border-radius: 4px 0 0 4px;
   outline: none;
@@ -77,7 +80,7 @@
   text-align: center;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   flex-direction: initial;
   justify-content: initial;
@@ -85,14 +88,13 @@
 }
 .employee .search .search-btn a i {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .employee .table {
   background-color: #FEFEFE;
   border-radius: 4px;
   padding: 8px 0;
   height: 70vh;
-  box-shadow: 0 0 10px #f5f5f5;
 }
 .employee .table table {
   width: 100%;
@@ -100,18 +102,26 @@
 .employee .table table td {
   color: #616161;
   padding-block: 6px;
+  margin: 0;
 }
 .employee .table table thead {
   box-shadow: 0 0 2px #f5f5f5;
-  font-size: 14px;
+  background-color: #ffffff;
+  font-size: 13px;
   font-weight: 700;
+}
+.employee .table table thead td:first-child {
+  padding-inline: 8px;
 }
 .employee .table table thead td:last-child {
   text-align: center;
   width: 8%;
 }
 .employee .table table tbody {
-  font-size: 14px;
+  font-size: 13px;
+}
+.employee .table table tbody td:first-child {
+  padding-inline: 8px;
 }
 .employee .table table tbody .action {
   display: flex;

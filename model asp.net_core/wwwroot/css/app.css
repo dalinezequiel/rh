@@ -17,7 +17,7 @@ html {
   height: 100vh;
 }
 html body {
-  background-color: #FEFEFE; /*#FBFBFB*/
+  background-color: #FEFEFE; /*#FEFEFE; #FBFBFB*/
 }
 html body header .logo label {
   display: flex;
@@ -93,9 +93,15 @@ html body main .sec:first-child .menu {
 }
 html body main .sec:first-child .menu i {
   margin-right: 8px;
+  color: #90a4ae;
 }
-html body main .sec:first-child .menu h4 {
+html body main .sec:first-child .menu h5 {
   text-align: center;
+  color: #90a4ae;
+}
+html body main .sec:first-child .menu h5:last-child {
+  color: #cfd8dc;
+  padding-inline: 2px 0;
 }
 html body main .sec:first-child .state {
   display: flex;
@@ -174,6 +180,7 @@ html body main .sec:last-child nav ul li a {
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  color: #546e7a;
   border-left: 4px solid #FEFEFE;
   display: flex;
   flex-direction: initial;
@@ -181,14 +188,6 @@ html body main .sec:last-child nav ul li a {
   align-items: center;
 }
 html body main .sec:last-child nav ul li a:hover {
-  /*
-       background-color: #eeeeee;
-   color: #90a4ae;
-
-   i {
-       color: #90a4ae;
-   }
-  */
   background-color: #fafafa;
   border-left: 4px solid #7e57c2;
   color: #7e57c2;
@@ -198,6 +197,7 @@ html body main .sec:last-child nav ul li a:hover i {
 }
 html body main .sec:last-child nav ul li a i:first-child {
   padding-right: 10px;
+  color: #546e7a;
 }
 
 .dashboard {
@@ -205,8 +205,6 @@ html body main .sec:last-child nav ul li a i:first-child {
   flex-direction: initial;
   justify-content: space-between;
   align-items: initial;
-  /*background-color:#ffffff;
-  padding:10px;*/
 }
 .dashboard table {
   width: 100%;
@@ -299,6 +297,9 @@ html body main .sec:last-child nav ul li a i:first-child {
   box-shadow: 0 0 6px #fafafa;
 }
 
+.employee {
+  padding-inline: 14px 0;
+}
 .employee .search {
   background-color: #FEFEFE;
   padding: 8px 0;
@@ -321,7 +322,7 @@ html body main .sec:last-child nav ul li a i:first-child {
   border-radius: 4px;
   cursor: pointer;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   flex-direction: initial;
   justify-content: initial;
@@ -329,7 +330,7 @@ html body main .sec:last-child nav ul li a i:first-child {
 }
 .employee .search .add-btn a i {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .employee .search .sea {
   display: flex;
@@ -339,7 +340,7 @@ html body main .sec:last-child nav ul li a i:first-child {
 }
 .employee .search .sea input, .employee .search .sea select {
   padding: 4px 6px;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #f5f5f5;
   border-radius: 4px;
   outline: none;
@@ -365,7 +366,7 @@ html body main .sec:last-child nav ul li a i:first-child {
 }
 .employee .search .search-btn input {
   padding: 5px 6px;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #f5f5f5;
   border-radius: 4px 0 0 4px;
   outline: none;
@@ -377,7 +378,7 @@ html body main .sec:last-child nav ul li a i:first-child {
   text-align: center;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   flex-direction: initial;
   justify-content: initial;
@@ -385,14 +386,13 @@ html body main .sec:last-child nav ul li a i:first-child {
 }
 .employee .search .search-btn a i {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .employee .table {
   background-color: #FEFEFE;
   border-radius: 4px;
   padding: 8px 0;
   height: 70vh;
-  box-shadow: 0 0 10px #f5f5f5;
 }
 .employee .table table {
   width: 100%;
@@ -400,18 +400,26 @@ html body main .sec:last-child nav ul li a i:first-child {
 .employee .table table td {
   color: #616161;
   padding-block: 6px;
+  margin: 0;
 }
 .employee .table table thead {
   box-shadow: 0 0 2px #f5f5f5;
-  font-size: 14px;
+  background-color: #ffffff;
+  font-size: 13px;
   font-weight: 700;
+}
+.employee .table table thead td:first-child {
+  padding-inline: 8px;
 }
 .employee .table table thead td:last-child {
   text-align: center;
   width: 8%;
 }
 .employee .table table tbody {
-  font-size: 14px;
+  font-size: 13px;
+}
+.employee .table table tbody td:first-child {
+  padding-inline: 8px;
 }
 .employee .table table tbody .action {
   display: flex;
@@ -458,8 +466,13 @@ html body main .sec:last-child nav ul li a i:first-child {
 
 .create-employee {
   background-color: #FEFEFE;
-  padding: 10px;
+  padding: 0 8px;
   border-radius: 6px;
+}
+.create-employee h5 {
+  padding-inline: 10px;
+  color: #90a4ae;
+  font-weight: 500;
 }
 .create-employee div {
   padding: 4px;
@@ -474,6 +487,7 @@ html body main .sec:last-child nav ul li a i:first-child {
   border: 1px solid #f5f5f5;
   border-radius: 4px;
   outline: none;
+  background-color: #FCFCFC;
 }
 .create-employee div label {
   color: #424242;
@@ -482,38 +496,69 @@ html body main .sec:last-child nav ul li a i:first-child {
 .create-employee .identity-box {
   display: grid;
   grid-template-columns: 33% auto 33%;
-  padding: 6px 6px 20px 6px;
+  padding-block: 0 20px;
+  padding-inline: 6px;
 }
 .create-employee .identity-box div:nth-child(1) {
   width: 50%;
 }
+.create-employee .identity-box div:nth-child(4) {
+  width: 80%;
+}
+.create-employee .identity-box div:nth-child(5) {
+  width: 70%;
+}
 .create-employee .identity-box div:nth-child(6) {
-  width: 50%;
+  width: 80%;
 }
 .create-employee .identity-box div:nth-child(7) {
   width: 50%;
 }
+.create-employee .identity-box div:nth-child(8) {
+  width: 70%;
+}
+.create-employee .identity-box div:nth-child(9) {
+  width: 70%;
+}
 .create-employee .address-box {
   display: grid;
   grid-template-columns: 33% auto 33%;
-  padding: 6px 6px 20px 6px;
+  padding-block: 0 20px;
+  padding-inline: 6px;
 }
 .create-employee .address-box div {
   width: 100%;
 }
 .create-employee .address-box div:nth-child(3) {
-  width: 50%;
+  width: 70%;
+}
+.create-employee .address-box div:nth-child(4) {
+  width: 70%;
+}
+.create-employee .address-box div:nth-child(5) {
+  width: 80%;
 }
 .create-employee .contact-box {
   display: grid;
   grid-template-columns: 33% auto 33%;
-  padding: 6px 6px 20px 6px;
+  padding-block: 0 20px;
+  padding-inline: 6px;
+}
+.create-employee .contact-box div:nth-child(2) {
+  width: 60%;
+}
+.create-employee .contact-box div:nth-child(3) {
+  width: 60%;
+}
+.create-employee .contact-box div:nth-child(4) {
+  width: 60%;
 }
 .create-employee .btn {
-  padding: 2px 6px;
+  padding-block: 10px 2px;
+  padding-inline: 6px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: start;
   align-items: initial;
 }
 .create-employee .btn div a, .create-employee .btn div button {
@@ -535,20 +580,69 @@ html body main .sec:last-child nav ul li a i:first-child {
   font-size: 16px;
 }
 .create-employee .btn div:first-child a {
-  background-color: #9C1818;
+  background-color: #85929E;
 }
 .create-employee .btn div:first-child a:hover {
-  background-image: linear-gradient(45deg, #9C1818, #B01A1A);
+  background-image: linear-gradient(45deg, #34495E, #85929E);
 }
 .create-employee .btn div:last-child button {
   border: none;
-  background-color: #3e32a8;
+  background-color: #3f51b5;
 }
 .create-employee .btn div:last-child button:hover {
-  background-image: linear-gradient(45deg, #261AB0, #672EC0);
+  background-image: linear-gradient(45deg, #261AB0, #3f51b5);
 }
 
-.employeeDetail {
-  border: 1px solid #455a64;
-  box-shadow: -2px 2px 2px #455a64;
+.employeeDetail .btns {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.employeeDetail .btns a {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #b0bec5;
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employeeDetail .btns a i {
+  color: #ffffff;
+  padding-right: 4px;
+}
+.employeeDetail .btns a:first-child {
+  background-color: #9C1818;
+  margin-right: 20px;
+}
+.employeeDetail .btns a:last-child {
+  background-color: #b0bec5;
+  margin-left: 6px;
+}
+.employeeDetail .info {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+}
+.employeeDetail .info section {
+  width: 100%;
+}
+.employeeDetail .info section .data {
+  margin-block: 0 10px;
+  margin-inline: 0 40px;
+  padding-inline: 20px 0;
+}
+.employeeDetail .info section .data p {
+  font-size: 14px;
+}
+.employeeDetail .info section img {
+  width: 60%;
+  height: auto;
 }

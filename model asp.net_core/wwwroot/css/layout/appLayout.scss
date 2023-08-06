@@ -9,8 +9,7 @@ html {
     height: 100vh;
 
     body {
-        background-color: #FEFEFE; /*#FBFBFB*/
-
+        background-color: #FEFEFE; /*#FEFEFE; #FBFBFB*/
         header {
             .logo {
                 label {
@@ -24,7 +23,6 @@ html {
             }
 
             section {
-                //background-color: #673ab7;
                 background-image: linear-gradient(45deg,#3e32a8, #6a1b9a);
                 padding-inline: 80px;
                 padding-block: 4px;
@@ -77,10 +75,17 @@ html {
 
                     i {
                         margin-right: 8px;
+                        color: #90a4ae;
                     }
 
-                    h4 {
+                    h5 {
                         text-align: center;
+                        color: #90a4ae;
+
+                        &:last-child {
+                            color: #cfd8dc;
+                            padding-inline: 2px 0;
+                        }
                     }
                 }
 
@@ -107,17 +112,12 @@ html {
                         &:last-child {
                             background-color: #673ab7;
                             color: #ffffff;
-                            //font-weight: bold;
 
                             i {
                                 padding-right: 4px;
                                 color: #ffffff;
                             }
                         }
-                    }
-
-                    i {
-                        //padding-inline: 4px;
                     }
 
                     .sale {
@@ -151,6 +151,8 @@ html {
                 grid-template-columns: 20% 80%;
 
                 nav {
+                    //border-right: 1px solid #EFF1FD;
+
                     ul {
                         margin-right: 16px;
 
@@ -158,7 +160,6 @@ html {
                             background-color: #fafafa;
                             border-left: 4px solid #7e57c2;
                             color: #7e57c2;
-                            //font-weight: bold;
 
                             i {
                                 color: #7e57c2;
@@ -176,22 +177,14 @@ html {
                                 cursor: pointer;
                                 border-radius: 4px;
                                 font-size: 14px;
+                                color: #546e7a;
                                 border-left: 4px solid #FEFEFE;
                                 @include flex-align(initial,initial,center);
 
                                 &:hover {
-                                    /*
-                                        background-color: #eeeeee;
-                                    color: #90a4ae;
-
-                                    i {
-                                        color: #90a4ae;
-                                    }
-                                   */
                                     background-color: #fafafa;
                                     border-left: 4px solid #7e57c2;
                                     color: #7e57c2;
-                                    //font-weight: 500;
 
                                     i {
                                         color: #7e57c2;
@@ -200,6 +193,7 @@ html {
 
                                 i:first-child {
                                     padding-right: 10px;
+                                    color: #546e7a;
                                 }
                             }
                         }

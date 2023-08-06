@@ -16,36 +16,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Authentication/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXV0aGVudGljYXRpb25cSW5kZXguY3NodG1s
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Authentication/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXEF1dGhlbnRpY2F0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Dashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Employee/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXEVtcGxveWVlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Employee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXEVtcGxveWVlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Employee/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXEVtcGxveWVlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Employee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wbG95ZWVcSW5kZXguY3NodG1s
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXEVtcGxveWVlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Schedule/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2NoZWR1bGVcSW5kZXguY3NodG1s
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Schedule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXFNjaGVkdWxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Admin/Service/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydmljZVxJbmRleC5jc2h0bWw=
+[D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Adm/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtXFNlcnZpY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Secret Information/.Root/Asp.net/model asp.net_core/model asp.net_core/Views/Shared/Error.cshtml]

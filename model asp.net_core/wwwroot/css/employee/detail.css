@@ -1,5 +1,54 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Nunito+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-.employeeDetail {
-  border: 1px solid #455a64;
-  box-shadow: -2px 2px 2px #455a64;
+.employeeDetail .btns {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.employeeDetail .btns a {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #b0bec5;
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+}
+.employeeDetail .btns a i {
+  color: #ffffff;
+  padding-right: 4px;
+}
+.employeeDetail .btns a:first-child {
+  background-color: #9C1818;
+  margin-right: 20px;
+}
+.employeeDetail .btns a:last-child {
+  background-color: #b0bec5;
+  margin-left: 6px;
+}
+.employeeDetail .info {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+}
+.employeeDetail .info section {
+  width: 100%;
+}
+.employeeDetail .info section .data {
+  margin-block: 0 10px;
+  margin-inline: 0 40px;
+  padding-inline: 20px 0;
+}
+.employeeDetail .info section .data p {
+  font-size: 14px;
+}
+.employeeDetail .info section img {
+  width: 60%;
+  height: auto;
 }

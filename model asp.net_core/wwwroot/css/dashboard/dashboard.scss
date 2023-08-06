@@ -2,8 +2,6 @@
 
 .dashboard {
     @include flex-align(initial,space-between,initial);
-    /*background-color:#ffffff;
-    padding:10px;*/
 
     table {
         width: 100%;

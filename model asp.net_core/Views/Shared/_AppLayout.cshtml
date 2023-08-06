@@ -39,7 +39,8 @@
         <section class="sec">
             <div class="menu">
                 <i class="ri-menu-line"></i>
-                <h4>@ViewData["Menu"]</h4>
+                <h5>@ViewData["Menu"]/</h5>
+                <h5> @ViewData["Translate"]</h5>
             </div>
             <div></div>
             <div class="state">
@@ -48,20 +49,6 @@
                     <i class="ri-calendar-line"></i>
                     Minha agenda
                 </a>
-                <!--<div class="sale">
-                    <i class="ri-arrow-left-down-line"></i>
-                    <div>
-                        <p>Vendas</p>
-                        <h5>1000.00</h5>
-                    </div>
-                </div>
-                <div class="buy">
-                    <i class="ri-arrow-right-up-line"></i>
-                    <div>
-                        <p>Compras</p>
-                        <h5>1000.00</h5>
-                    </div>
-                </div>-->
             </div>
         </section>
         <section class="sec">
@@ -148,7 +135,7 @@
     </main>
     @await RenderSectionAsync("Scripts", required: false)
     <script src="https://cdn.jsdelivr.net/npm/chart.js" asp-append-version="true"></script>
-    <script src="~/js/tinLayout.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" asp-append-version="true"></script>
+    <script src="~/js/appLayout.js" asp-append-version="true"></script>
 </body>
 </html>

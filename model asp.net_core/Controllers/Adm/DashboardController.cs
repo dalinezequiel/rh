@@ -9,7 +9,7 @@ namespace model_asp.net_core.Controllers.Admin
         [Route("dashboard/index")]
         public IActionResult Index()
         {
-            return View("Views/Admin/Dashboard/Index.cshtml");
+            return View("Views/Adm/Dashboard/Index.cshtml");
         }
     }
 }

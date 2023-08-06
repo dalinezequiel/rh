@@ -1,6 +1,9 @@
 ﻿@import '../function/_function';
 
 .employee {
+    padding-inline: 14px 0;
+
+
     .search {
         background-color: #FEFEFE;
         padding: 8px 0;
@@ -17,12 +20,12 @@
                 border-radius: 4px;
                 cursor: pointer;
                 color: #ffffff;
-                font-size: 14px;
+                font-size: 13px;
                 @include flex-align(initial,initial,center);
 
                 i {
                     color: #ffffff;
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
@@ -32,7 +35,7 @@
 
             input, select {
                 padding: 4px 6px;
-                font-size: 14px;
+                font-size: 13px;
                 border: 1px solid #f5f5f5;
                 border-radius: 4px;
                 outline: none;
@@ -57,7 +60,7 @@
 
             input {
                 padding: 5px 6px;
-                font-size: 14px;
+                font-size: 13px;
                 border: 1px solid #f5f5f5;
                 border-radius: 4px 0 0 4px;
                 outline: none;
@@ -70,12 +73,12 @@
                 text-align: center;
                 border-radius: 0 4px 4px 0;
                 cursor: pointer;
-                font-size: 14px;
+                font-size: 13px;
                 @include flex-align(initial,initial,center);
 
                 i {
                     color: #ffffff;
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
@@ -86,7 +89,6 @@
         border-radius: 4px;
         padding: 8px 0;
         height: 70vh;
-        box-shadow: 0 0 10px #f5f5f5;
 
         table {
             width: 100%;
@@ -94,12 +96,18 @@
             td {
                 color: #616161;
                 padding-block: 6px;
+                margin: 0;
             }
 
             thead {
                 box-shadow: 0 0 2px #f5f5f5;
-                font-size: 14px;
+                background-color: #ffffff;
+                font-size: 13px;
                 font-weight: 700;
+
+                td:first-child {
+                    padding-inline: 8px;
+                }
 
                 td:last-child {
                     text-align: center;
@@ -108,7 +116,11 @@
             }
 
             tbody {
-                font-size: 14px;
+                font-size: 13px;
+
+                td:first-child {
+                    padding-inline: 8px;
+                }
 
                 .action {
                     @include flex-align(initial,center,center);

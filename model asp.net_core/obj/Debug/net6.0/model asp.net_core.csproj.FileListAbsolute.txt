@@ -6,34 +6,6 @@ D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\De
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.runtimeconfig.json
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\model asp.net_core.pdb
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.AssemblyReference.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.GeneratedMSBuildEditorConfig.editorconfig
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfoInputs.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfo.cs
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CoreCompileInputs.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.MvcApplicationPartsAssemblyInfo.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cs
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.model asp.net_core.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.build.model asp.net_core.props
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.model asp.net_core.props
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.model asp.net_core.props
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.pack.json
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.build.json
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.development.json
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\scopedcss\bundle\model asp.net_core.styles.css
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\refint\model asp.net_core.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.pdb
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.genruntimeconfig.cache
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\ref\model asp.net_core.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CopyComplete
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Data.SqlClient.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\Azure.Core.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\Azure.Identity.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -62,6 +34,7 @@ D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\De
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Data.SqlClient.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\System.Memory.Data.dll
@@ -76,8 +49,35 @@ D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\De
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.AssemblyReference.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfoInputs.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.AssemblyInfo.cs
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CoreCompileInputs.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.MvcApplicationPartsAssemblyInfo.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.RazorAssemblyInfo.cs
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.model asp.net_core.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.build.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.model asp.net_core.props
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.build.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\staticwebassets.development.json
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\scopedcss\bundle\model asp.net_core.styles.css
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.csproj.CopyComplete
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\refint\model asp.net_core.dll
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.pdb
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\model asp.net_core.genruntimeconfig.cache
+D:\Secret Information\.Root\Asp.net\model asp.net_core\model asp.net_core\obj\Debug\net6.0\ref\model asp.net_core.dll

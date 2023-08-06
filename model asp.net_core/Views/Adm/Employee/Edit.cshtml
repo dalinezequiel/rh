@@ -1,0 +1,192 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using model_asp.net_core.Models;
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["Translate"] = "Actualização";
+    ViewData["Menu"] = "Employee";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+
+<form method="post" asp-controller="Employee" asp-action="Edit">
+    <section class="create-employee">
+        <section class="create-employee">
+            <section class="identity">
+                <h5>Identificação</h5>
+                <div class="identity-box">
+                    <div>
+                        <label>Código</label>
+                        <input type="text" name="id" value="@ViewBag.Data.Id" readOnly />
+                    </div>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" placeholder="Ex: João António" name="name" value="@ViewBag.Data.Name" />
+                    </div>
+                    <div>
+                        <label>Apelido</label>
+                        <input type="text" placeholder="Ex: Matsinhe" name="surname" value="@ViewBag.Data.Surname" />
+                    </div>
+                    <div>
+                        <label>Gênero</label>
+                        <select name="gender" asp-items="@ViewBag.Data.Genders">
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Data de nascimento</label>
+                        <input type="date" name="birthday" value="@ViewBag.Data.Birth"/>
+                    </div>
+                    <div>
+                        <label>Documento</label>
+                        <select name="document" asp-items="@ViewBag.Data.Documents">
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Número doc.</label>
+                        <input type="text" name="doc_number" value="@ViewBag.Data.Document.Number" />
+                    </div>
+                    <div>
+                        <label>Data de emissão</label>
+                        <input type="date" name="date_issue" value="@ViewBag.Data.Document.DateIssue" />
+                    </div>
+                    <div>
+                        <label>Local de emissão</label>
+                        <input type="text" name="place_issue" value="@ViewBag.Data.Document.PlaceOfIssue" />
+                    </div>
+                </div>
+            </section>
+            <section class="address">
+                <h5>Endereço</h5>
+                <div class="address-box">
+                    <div>
+                        <label>Provincia</label>
+                        <select name="province">
+                            <option>Selecione</option>
+                            <option>Maputo</option>
+                            <option>Gaza</option>
+                            <option>Inhambane</option>
+                            <option>Manica</option>
+                            <option>Sofala</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Distrito</label>
+                        <select name="district">
+                            <option>Selecione</option>
+                            <option>Manhiça</option>
+                            <option>Boane</option>
+                            <option>Magude</option>
+                            <option>Xai xai</option>
+                            <option>Chibuto</option>
+                            <option>Massinga</option>
+                            <option>KaMubukwane</option>
+                            <option>KaMavota</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Bairo</label>
+                        <input type="text" name="neighborhood" value="@ViewBag.Data.Address.Neighborhood" />
+                    </div>
+                    <div>
+                        <label>Rua</label>
+                        <input type="text" placeholder="Ex: Nelson Mandela, nr. 1500" name="road" value="@ViewBag.Data.Address.Road" />
+                    </div>
+                    <div>
+                        <label>Avenida</label>
+                        <input type="text" name="avenue" value="@ViewBag.Data.Address.Avenue" />
+                    </div>
+                </div>
+            </section>
+            <section class="">
+                <h5>Contacto</h5>
+                <div class="contact-box">
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="Ex: employee@emplo.com" name="email" value="@ViewBag.Data.Contact.Email" />
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="text" placeholder="Ex: 881234567" name="phone" value="@ViewBag.Data.Contact.Phone" />
+                    </div>
+                    <div>
+                        <label>WhatsApp</label>
+                        <input type="text" placeholder="Ex: 881234567" name="whatsap" value="@ViewBag.Data.Contact.WhatsApp" />
+                    </div>
+                    <div>
+                        <label>Estado</label>
+                        <select name="status" asp-items="@ViewBag.Data.States">
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="btn">
+            <div>
+                <a asp-area="" asp-controller="Employee" asp-action="Index">
+                    <i class="ri-arrow-left-circle-line"></i>
+                    Voltar
+                </a>
+            </div>
+            <div>
+                <button>
+                    <i class="fa-solid fa-save"></i>
+                    Update
+                </button>
+            </div>
+        </section>
+    </section>
+</form>
+
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        const updateForm = document.getElementsByTagName("form");
+        updateForm[0].addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Tem certeza?',
+                icon: 'question',
+                html: 'Você não será capaz de reverter isso!',
+                showCloseButton: false,
+                showCancelButton: true,
+                focusConfirm: true,
+                confirmButtonText: 'Sim, actualizar!',
+                cancelButtonText: 'Não, cancelar!',
+                showLoaderOnConfirm: true,
+                reverseButtons: true,
+                dangerMode: true
+
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    updateForm[0].submit();
+                } else {
+                    Swal.fire({
+                        title: 'Oops..!',
+                        icon: 'info',
+                        html: 'Não foi possível actualizar este funcionário!',
+                        focusConfirm: true,
+                        confirmButtonText: 'OK, entendi!',
+                        showLoaderOnConfirm: true,
+                    });
+                }
+            });
+        })
+    </script>
+
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}

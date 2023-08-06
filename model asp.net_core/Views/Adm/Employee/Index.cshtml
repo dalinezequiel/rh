@@ -4,6 +4,7 @@
 @using model_asp.net_core.Models;
 @{
     ViewData["Title"] = "Index";
+    ViewData["Translate"] = "Consulta";
     ViewData["Menu"]="Employee";
     Layout = "~/Views/Shared/_AppLayout.cshtml";
 }
@@ -59,7 +60,7 @@
         <table>
             <thead>
                 <tr>
-                    <td>Id</td>
+                    <td>ID</td>
                     <td>Name</td>
                     <td>Surname</td>
                     <td>Gender</td>
@@ -79,9 +80,9 @@
                             <td>@em.Name</td>
                             <td>@em.Surname</td>
                             <td>@em.Gender</td>
-                            <td>@em.Document</td>
-                            <td>@em.DocNumber</td>
-                            <td>@em.CreateAt.ToShortDateString()</td>
+                            <td>@em.Document.Name</td>
+                            <td>@em.Document.Number</td>
+                            <td>@em.CreatedAt.ToShortDateString()</td>
                             <td class="action">
                                 <div class="edit">
                                     <a asp-controller="Employee" asp-action="Edit" asp-route-id="@em.Id">

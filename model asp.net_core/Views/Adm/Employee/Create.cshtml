@@ -3,30 +3,15 @@
 *@
 @{
     ViewData["Title"] = "Create";
+    ViewData["Translate"] = "Criação";
     ViewData["Menu"] = "Employee";
     Layout = "~/Views/Shared/_AppLayout.cshtml";
-}
-@{
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    if (ViewData["error"] != null)
-    {
-        <script type="text/javascript">
-            Swal.fire({
-                title: 'Erro!',
-                icon: 'error',
-                html: '@ViewData["error"]',
-                focusConfirm: true,
-                confirmButtonText: 'OK, entendi!',
-                showLoaderOnConfirm: true,
-            });
-        </script>
-    }
 }
 
 <form method="post" asp-controller="Employee" asp-action="Create">
     <section class="create-employee">
     <section class="identity">
-        <h4>Identificação</h4>
+        <h5>Identificação</h5>
         <div class="identity-box">
             <div>
                 <label>Código</label>
@@ -34,11 +19,11 @@
             </div>
             <div>
                 <label>Nome</label>
-                <input type="text" name="name"/>
+                <input type="text" placeholder="Ex: João António" name="name"/>
             </div>
             <div>
                 <label>Apelido</label>
-                <input type="text" name="surname"/>
+                <input type="text" placeholder="Ex: Matsinhe" name="surname"/>
             </div>
             <div>
                 <label>Gênero</label>
@@ -48,72 +33,81 @@
                     <option>Femenino</option>
                 </select>
             </div>
+                <div>
+                    <label>Data de nascimento</label>
+                    <input type="date" name="birthday"/>
+                </div>
             <div>
                 <label>Documento</label>
-                <select name="document" asp-items="@ViewBag.Documents">
+                <select name="document" asp-items="@ViewBag.Default.Document.Documents">
                     <option>Selecione</option>
                 </select>
             </div>
             <div>
-                <label>N° documento</label>
+                <label>Número doc.</label>
                 <input type="text" name="doc_number" />
             </div>
             <div>
-                <label>Nuit</label>
-                <input type="number" />
+                <label>Data de emissão</label>
+                <input type="date" name="date_issue"/>
+            </div>
+            <div>
+                <label>Local de emissão</label>
+                <input type="text" name="place_issue"/>
             </div>
         </div>
     </section>
     <section class="address">
-        <h4>Endereço</h4>
+        <h5>Endereço</h5>
         <div class="address-box">
             <div>
                 <label>Provincia</label>
-                <select>
+                <select name="province" asp-items="@ViewBag.Default.Address.Province.Provinces">
                     <option>Selecione</option>
-                    <option>Maputo</option>
-                    <option>Gaza</option>
-                    <option>Inhambane</option>
-                    <option>Manica</option>
-                    <option>Sofala</option>
                 </select>
             </div>
             <div>
                 <label>Distrito</label>
-                <select>
+                <select name="district" asp-items="@ViewBag.Default.Address.Province.District.Districts">
                     <option>Selecione</option>
-                    <option>Manhiça</option>
-                    <option>Boane</option>
-                    <option>Magude</option>
-                    <option>Xai xai</option>
-                    <option>Chibuto</option>
-                    <option>Massinga</option>
                 </select>
             </div>
             <div>
+                <label>Bairo</label>
+                <input type="text" name="neighborhood"/>
+            </div>
+            <div>
                 <label>Rua</label>
-                <input type="text" />
+                <input type="text" placeholder="Ex: Nelson Mandela, nr. 1500" name="road"/>
             </div>
             <div>
                 <label>Avenida</label>
-                <input type="text" />
+                <input type="text" name="avenue"/>
             </div>
         </div>
     </section>
-    <section>
-        <h4>Contacto</h4>
+    <section class="">
+        <h5>Contacto</h5>
         <div class="contact-box">
             <div>
                 <label>Email</label>
-                <input type="email" />
+                <input type="email" placeholder="Ex: employee@emplo.com" name="email"/>
             </div>
             <div>
                 <label>Telefone</label>
-                <input type="text" />
+                <input type="text" placeholder="Ex: 881234567" name="phone"/>
             </div>
+                <div>
+                    <label>WhatsApp</label>
+                    <input type="text" placeholder="Ex: 881234567" name="whatsap" />
+                </div>
             <div>
-                <label>Celular</label>
-                <input type="text" />
+                <label>Estado</label>
+                <select name="status">
+                    <option>Selecione</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>
+                </select>
             </div>
         </div>
     </section>
@@ -131,3 +125,20 @@
     </section>
 </section>
 </form>
+
+@{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    if (ViewData["error"] != null)
+    {
+        <script type="text/javascript">
+            Swal.fire({
+                title: 'Erro!',
+                icon: 'error',
+                html: '@ViewData["error"]',
+                focusConfirm: true,
+                confirmButtonText: 'OK, entendi!',
+                showLoaderOnConfirm: true,
+            });
+        </script>
+    }
+}

@@ -105,6 +105,22 @@
       "PackagePath": "staticwebassets\\img\\hero\\ipad.jpg"
     },
     {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\illustration\\png\\contract.png",
+      "PackagePath": "staticwebassets\\img\\illustration\\png\\contract.png"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\illustration\\png\\resume.png",
+      "PackagePath": "staticwebassets\\img\\illustration\\png\\resume.png"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\illustration\\svg\\contract.svg",
+      "PackagePath": "staticwebassets\\img\\illustration\\svg\\contract.svg"
+    },
+    {
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\illustration\\svg\\resume.svg",
+      "PackagePath": "staticwebassets\\img\\illustration\\svg\\resume.svg"
+    },
+    {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\img\\profile\\user-32.png",
       "PackagePath": "staticwebassets\\img\\profile\\user-32.png"
     },
@@ -121,12 +137,12 @@
       "PackagePath": "staticwebassets\\img\\svg\\style.svg"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\appLayout.js",
+      "PackagePath": "staticwebassets\\js\\appLayout.js"
     },
     {
-      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\tinLayout.js",
-      "PackagePath": "staticwebassets\\js\\tinLayout.js"
+      "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "D:\\Secret Information\\.Root\\Asp.net\\model asp.net_core\\model asp.net_core\\wwwroot\\lib\\bootstrap\\LICENSE",

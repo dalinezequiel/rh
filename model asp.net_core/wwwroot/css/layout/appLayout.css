@@ -13,7 +13,7 @@ html {
   height: 100vh;
 }
 html body {
-  background-color: #FEFEFE; /*#FBFBFB*/
+  background-color: #FEFEFE; /*#FEFEFE; #FBFBFB*/
 }
 html body header .logo label {
   display: flex;
@@ -89,9 +89,15 @@ html body main .sec:first-child .menu {
 }
 html body main .sec:first-child .menu i {
   margin-right: 8px;
+  color: #90a4ae;
 }
-html body main .sec:first-child .menu h4 {
+html body main .sec:first-child .menu h5 {
   text-align: center;
+  color: #90a4ae;
+}
+html body main .sec:first-child .menu h5:last-child {
+  color: #cfd8dc;
+  padding-inline: 2px 0;
 }
 html body main .sec:first-child .state {
   display: flex;
@@ -170,6 +176,7 @@ html body main .sec:last-child nav ul li a {
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  color: #546e7a;
   border-left: 4px solid #FEFEFE;
   display: flex;
   flex-direction: initial;
@@ -177,14 +184,6 @@ html body main .sec:last-child nav ul li a {
   align-items: center;
 }
 html body main .sec:last-child nav ul li a:hover {
-  /*
-       background-color: #eeeeee;
-   color: #90a4ae;
-
-   i {
-       color: #90a4ae;
-   }
-  */
   background-color: #fafafa;
   border-left: 4px solid #7e57c2;
   color: #7e57c2;
@@ -194,4 +193,5 @@ html body main .sec:last-child nav ul li a:hover i {
 }
 html body main .sec:last-child nav ul li a i:first-child {
   padding-right: 10px;
+  color: #546e7a;
 }
